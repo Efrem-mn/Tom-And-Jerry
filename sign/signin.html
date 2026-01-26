@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In / Tom And Jerry</title>
+    <script src="https://kit.fontawesome.com/cd325d4371.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+    <header>
+        <div class="home">
+            <div class="logo">
+                <a href="../index.html"><img src="../img/img (6).png" alt="Logo"></a>
+            </div>
+            <div class="menu-div">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="background">Me<span>nu</span></div>
+            <div class="exit">
+               <img src="../img/img (6).png" alt="">
+            </div>
+            
+            <div class="menu-container">
+                <ul class="options">
+                    <li class="nav" title="Home"><a href="../index.html" class="nav-link"><i class="fa-solid fa-house"></i></a></li>
+                    <li class="nav" title="Series"><a href="#" class="nav-link"><i class="fa-solid fa-tv"></i></a></li>
+                    <li class="nav" title="Movies"><a href="#" class="nav-link"><i class="fa-solid fa-film"></i></a></li>
+                    <li class="nav" title="About"><a href="#" class="nav-link"><i class="fa-solid fa-address-card"></i></a></li>
+                    <li class="nav" title="Download"><a href="#" class="nav-link"><i class="fa-solid fa-cloud-arrow-down"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="menu-containerright">
+                <div class="information">
+                    <p class="title">Film</p>
+                    <p class="description">Tom and <span>Jerry</span></p>
+                </div>
+                <div class="information">
+                    <li class="nav" title="Contact"><a href="#" class="nav-link"><i class="fa-regular fa-address-book"></i>
+                    <p class="description">TomAndJerry<span>@gmail.com</span></p>
+                    <p class="description">+251<span>9000000</span></p>
+                </div>
+                <div class="information">
+                    
+                    <div class="social-medias">
+                        <li class="nav" title="FollowUs"><a href="#" class="nav-link"><i class="fa-solid fa-user-plus"></i> </a></li>
+                        <ul>
+                        <li style="--i: 0; --clr: #1877f2">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+  </li>
+  
+  <li style="--i: 2; --clr: #1b1e21">
+    <a href="#"><i class="fab fa-x-twitter"></i></a>
+  </li>
+  <li style="--i: 3; --clr: #000">
+    <a href="#"><i class="fab fa-tiktok"></i></a>
+  </li>
+
+  <li style="--i: 5; --clr: #c32aa3">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+  </li>
+  <li style="--i: 6; --clr: #ccc">
+    <a href="#"><i class="fas fa-tv"></i></a>
+</li>
+  <li style="--i: 7; --clr: #ff0000">
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<section class="first">
+    <div class="wrapper">
+        <div class="form-wrapper sign-up">
+            <form action="">
+                <h2>Log in or sign up</h2>
+                <p class="subtitle">You'll get smarter By Watching Every Episod Of Tom And Jerry.</p>
+                
+                <div class="social-login">
+                    <button type="button" class="social-btn"><i class="fa-brands fa-google"></i> Continue with Google</button>
+                    <button type="button" class="social-btn"><i class="fa-brands fa-apple"></i> Continue with Apple</button>
+                    <button type="button" class="social-btn"><i class="fa-brands fa-microsoft"></i> Continue with Microsoft</button>
+                </div>
+
+                <div class="divider"><span>OR</span></div>
+
+                <div class="input-group">
+                    <input type="email" required>
+                    <label>Email address</label>
+                </div>
+                <button type="submit" class="btn">Continue</button>
+                
+                <div class="sign-link">
+                    <p>Already have an account? <a href="#" class="signIn-link">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-wrapper sign-in">
+            <form action="">
+                <h2>Log in or sign up</h2>
+                
+                <div class="input-group">
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="divider"><span>OR</span></div>
+                <div class="social-login">
+                    <button type="button" class="social-btn"><i class="fa-brands fa-google"></i> Continue with Google</button>
+                    <button type="button" class="social-btn"><i class="fa-brands fa-apple"></i> Continue with Apple</button>
+                    <button type="button" class="social-btn"><i class="fa-brands fa-microsoft"></i> Continue with Microsoft</button>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="sign-link">
+                    <p>Don't have an account? <a href="#" class="signUp-link">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+    <script>
+        const menuBtn = document.querySelector(".menu-div");
+        const exitBtn = document.querySelector(".exit");
+
+        let t1 = gsap.timeline({ paused: true });
+        
+        t1.to(".menu", { 
+            top: 0, 
+            opacity: 1, 
+            duration: 0.8, 
+            ease: "power2.inOut" 
+        });
+        
+        t1.to(".nav", {
+            opacity: 1,
+            marginBottom: 0,
+            duration: 0.5,
+            ease: "power2.inOut",
+            stagger: 0.1,
+        }, "-=0.4");
+
+        menuBtn.addEventListener("click", () => t1.play());
+        exitBtn.addEventListener("click", () => t1.reverse());
+        const wrapper = document.querySelector('.wrapper');
+const signUpLink = document.querySelector('.signUp-link');
+const signInLink = document.querySelector('.signIn-link');
+
+signUpLink.addEventListener('click', () => {
+    wrapper.classList.add('animate-signIn');
+    wrapper.classList.remove('animate-signUp');
+});
+
+signInLink.addEventListener('click', () => {
+    wrapper.classList.add('animate-signUp');
+    wrapper.classList.remove('animate-signIn');
+});
+    </script>
+</body>
+</html>
