@@ -592,8 +592,8 @@ header .slider-track img {
   margin-left: 40%;
 }
 .third .img8 img{
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
   
 }
 .fourth{
@@ -896,92 +896,7 @@ margin-left: -20%;    text-align: center;
   margin-left: -4%;
 }
 }
-@media (max-width: 1440px) {
 
-  header .menu {
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-
- header .options {
-    display: flex;
-    flex-direction: row !important;
-    margin-top: 1%;
-    margin-left: 1%;
-    gap: 30px;
-  }
-.menu-containerright {
-    margin-left: -20%;
-    text-align: center;
-  }
-
-  header .nav-link {
-    font-size: 2.3rem;
-  }
-
-  header .background {
-    font-size: 9rem;
-  }
-
-  header .information {
-    margin-left: -50%;
-    text-align: center;
-  }
-  header .social-medias ul {
-    margin-left: 40%;
-}
-.first .content {
-    left: 0;
-    top: 90%;
-  }
-  .first .video-controls {
-  margin-top: -15%;
-  margin-left: 20%;
-}
-.second .content {
-  width: 80%;           
-}
-.second .content1 {
-  width: 80%;           
-}
-.second .content2 {
-  width: 80%;           
-}
-.third .hero-blur-image{
-    width: 40%;
-    top: -4%;
-    
-  }
-  .third h1{
-    font-size: 30px;
-}
-.third h3{
-    font-size: 7px;
-}
-.third .text{
-  margin-top: 130%;
-  margin-left: -60%;
-}
-.third .img8{
-  margin-top: 130%;
-  margin-left: 40%;
-}
-
-.fourth .jerry{
-    width: 90%;
-    height: 500px;
-    margin-left: -35%;
-   
-}
-.fourth .jerry .mouse img{
-  width: 200px;
-  height: 300px;
-  margin-left: 5%;
-}
-.fourth .jerry .hot{
-  margin-left: -4%;
-}
-}
 
 
 
